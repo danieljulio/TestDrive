@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TestDrive.Views.AgendamentoView"
+             Title="{Binding Path=Veiculo.nome}">
+    <StackLayout Padding="25">
+        <TableView Intent="Form">
+            <TableRoot Title="Agendamento">
+                <TableSection Title="Seus Dados">
+                    <EntryCell Label="Nome:" Keyboard="Text" Text="{Binding Nome}"/>
+                </TableSection>
+            </TableRoot>
+        </TableView>
+    </StackLayout>
+</ContentPage>
